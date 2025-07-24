@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_addition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Addition"
+        android:textSize="28sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Spinner for Language Selection -->
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#3F51B5"
+        android:popupBackground="#FFFFFF"
+        android:padding="10dp"
+        android:entries="@array/language_array"
+        android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etNumber1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="28sp"
+            android:textColor="#3F51B5"
+            android:layout_marginHorizontal="12dp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/etNumber2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnSolve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solve"
+            android:textSize="20sp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textSize="20sp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer: "
+        android:textSize="26sp"
+        android:textColor="#E91E63"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

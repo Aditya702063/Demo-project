@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quizLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Language Selector -->
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/language_array"
+        android:backgroundTint="#FF9800"
+        android:spinnerMode="dropdown" />
+
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Question Image" />
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:gravity="center" />
+
+    <!-- Star Image for Feedback -->
+    <ImageView
+        android:id="@+id/starImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/star"
+        android:visibility="gone"
+        android:layout_marginTop="10dp" />
+
+    <!-- Option 1 -->
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 1"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:background="#BBDEFB"
+        android:textColor="#0D47A1"/>
+
+    <!-- Option 2 -->
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 2"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:background="#BBDEFB"
+        android:textColor="#0D47A1" />
+
+    <!-- Option 3 -->
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 3"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:background="#BBDEFB"
+        android:textColor="#0D47A1" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
