@@ -53,6 +53,13 @@ public class QuizActivity extends AppCompatActivity {
                 startActivity(new Intent(QuizActivity.this, QuizMissingNumbersActivity.class));
             }
         });
+        btnComparison.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(QuizActivity.this, QuizBiggerOrSmallerActivity.class));
+            }
+        });
+
 
 
 

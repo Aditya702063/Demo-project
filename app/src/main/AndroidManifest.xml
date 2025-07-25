@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
+            android:name=".QuizBiggerOrSmallerActivity"
+            android:exported="false" />
+        <activity
             android:name=".QuizMissingNumbersActivity"
             android:exported="false" />
         <activity
