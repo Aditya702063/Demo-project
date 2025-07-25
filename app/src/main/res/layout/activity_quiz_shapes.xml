@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Language Selector -->
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:entries="@array/language_array"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Question Text -->
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which shape is this?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Shape Image -->
+        <ImageView
+            android:id="@+id/shapeImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="24dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shape_circle" />
+
+        <!-- Answer Options -->
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:layout_marginBottom="12dp"
+            android:textSize="20sp"
+            android:background="#BBDEFB"
+            android:textColor="#0D47A1" />
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:layout_marginBottom="12dp"
+            android:textSize="20sp"
+            android:background="#BBDEFB"
+            android:textColor="#0D47A1" />
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:background="#BBDEFB"
+            android:textColor="#0D47A1"/>
+
+        <!-- Star Image -->
+        <ImageView
+            android:id="@+id/starImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/star"
+            android:visibility="gone"
+            android:contentDescription="Star" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>
