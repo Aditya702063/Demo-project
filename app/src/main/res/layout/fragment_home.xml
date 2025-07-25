@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_gravity="center">
+
+        <!-- Learning Activity Button -->
+        <LinearLayout
+            android:id="@+id/learningLayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/btnLearning"
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:background="@drawable/rounded_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/learning"
+                android:contentDescription="Learning Activity"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learning"
+                android:textSize="18sp"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Quiz Button -->
+        <LinearLayout
+            android:id="@+id/quizLayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/btnQuiz"
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/rounded_bg"
+                android:src="@drawable/quizz"
+                android:contentDescription="Quiz Activity"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz"
+                android:textSize="18sp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Games Button -->
+        <LinearLayout
+            android:id="@+id/gamesLayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/btnGames"
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:background="@drawable/rounded_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/game"
+                android:contentDescription="Games Activity"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Games"
+                android:textSize="18sp"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

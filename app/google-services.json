@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "774434419407",
+    "project_id": "maths-c36bf",
+    "storage_bucket": "maths-c36bf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774434419407:android:86e4366d8dee3bf8697dba",
+        "android_client_info": {
+          "package_name": "com.spark.maths"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7OfD6yunxhRb7Tsc_nMuMAjPTy-x9BPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
